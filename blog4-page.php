@@ -554,18 +554,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
 
     <!-- FORM -->
-    <?php if (isset($_GET['comment']) && $_GET['comment'] === 'success'): ?>
-    <p style="color: green; font-weight: 600; margin-bottom: 15px;">
-        ✅ Your comment has been submitted. Thank you!
-    </p>
-<?php endif; ?>
-
-<form class="comment-form" action="send_comment.php" method="post">
+    <form class="comment-form" action="https://substanceads.com/submit-takkar.asp" method="POST">
     <div class="form-row">
         <input type="text" name="name" placeholder="Name*" required>
-        <input type="email" name="email" placeholder="Email*" required>
+        <input type="email" name="email" placeholder="Email Address*" required>
     </div>
-    <textarea name="comment" rows="6" placeholder="Comment*" required></textarea>
+    <textarea name="message" rows="6" placeholder="Comment*" required></textarea>
     <button type="submit" style="margin-bottom: 40px;">Post Comment</button>
 </form>
 <!-- COMMENT SECTION END -->
